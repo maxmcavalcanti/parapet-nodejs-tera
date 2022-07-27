@@ -9,9 +9,7 @@ app.use(express.json());
 
 //Config CORS
 app.use(
-  cors({
-
-  })
+  cors({})
 );
 
 //Public folder
