@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const getToken = require("./get-token");
 //middleware to validate token
 const checkToken = (req, res, next) => {
-  if (!req.headers.authorization) {
+  if (!req.headers['authorization']) {
     return res.status(401).json({ message: "No token provided" });
   }
 
